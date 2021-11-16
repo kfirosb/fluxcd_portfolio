@@ -12,7 +12,7 @@ spec:
   chart:
     git: git@github.com:kfirosb/fluxcd_portfolio.git
     path: charts/taskapp
-    ref: main
+    ref: master
   values:
     image:
       repository: 333923656856.dkr.ecr.eu-central-1.amazonaws.com/tasksapp
