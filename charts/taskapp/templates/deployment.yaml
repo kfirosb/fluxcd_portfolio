@@ -19,11 +19,11 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           resources:
             limits:
-              cpu: 200m
-              memory: 256Mi
+              cpu: 0.5
+              memory: 512Mi
             requests:
-              cpu: 100m
-              memory: 128Mi
+              cpu: 250m
+              memory: 50Mi
           ports:
             - containerPort: {{ .Values.app.containerPort }}
           envFrom:
@@ -43,6 +43,7 @@ kind: Service
 metadata:
   name: {{ .Values.app.serv }}
 spec:
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: {{ .Values.app.containerPort }}
