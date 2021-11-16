@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: 333923656856.dkr.ecr.eu-central-1.amazonaws.com/tasksapp
-      tag: 1.0.22
+      tag: "1.0.23"
     replicaCount: 1
     hpa:
       enabled: false
