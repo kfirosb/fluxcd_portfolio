@@ -330,7 +330,7 @@ labels: {}
 ## @param replicaCount Number of MongoDB&reg; nodes (only when `architecture=replicaset`)
 ## Ignored when mongodb.architecture=standalone
 ##
-replicaCount: 3
+replicaCount: 2
 ## @param strategyType StrategyType for MongoDB&reg; statefulset
 ## It can be set to RollingUpdate or Recreate by default.
 ##
