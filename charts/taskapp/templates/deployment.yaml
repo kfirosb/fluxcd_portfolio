@@ -35,6 +35,14 @@ spec:
               secretKeyRef:
                 name: {{ .Values.app.secret }}
                 key: DATABASE_URL
+          env:
+          - name: DATABASE_URL
+            valueFrom:
+              secretKeyRef:
+                name: {{ .Values.app.secret }}
+                key: DATABASE_URL
+                
+              
                                    
 ---
 

@@ -15,8 +15,8 @@ spec:
     ref: master
   values:
     image:
-      repository: public.ecr.aws/t9c2t0n2/tasksapp
-      tag: 1.0.22
+      repository: 006262944085.dkr.ecr.eu-west-1.amazonaws.com/tasksapp
+      tag: 1.0.1
     replicaCount: 1
     hpa:
       enabled: false
