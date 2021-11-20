@@ -1,0 +1,18 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+  namespace: default
+spec:
+  acme:
+    # Staging API
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: kfirosb@gmail.com
+    privateKeySecretRef:
+      name: account-key-prod2
+    solvers:
+    - http01:
+       ingress:
+        # Valid values are ClusterIP and NodePort
+        class: nginx
+      

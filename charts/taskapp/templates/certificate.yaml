@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: kfirsecret
+  namespace:  default
+spec:
+  dnsNames:
+    - ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
+  secretName: kfirsecret
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  
