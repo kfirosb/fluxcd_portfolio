@@ -12,7 +12,7 @@ spec:
   tls:
   - hosts:
     - ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
-    secretName: kfirsecret
+    # secretName: kfirsecret
   rules:
   - host: ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
     http:
