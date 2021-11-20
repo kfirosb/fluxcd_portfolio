@@ -11,10 +11,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - echokfirb.tk
+    - ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
     # secretName: kfirsecret
   rules:
-  - host: echokfirb.tk
+  - host: ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
     http:
       paths:
       - path: /
