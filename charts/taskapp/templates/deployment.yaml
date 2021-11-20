@@ -51,7 +51,6 @@ kind: Service
 metadata:
   name: {{ .Values.app.serv }}
 spec:
-  type: LoadBalancer
   ports:
   - port: 80
     targetPort: {{ .Values.app.containerPort }}
