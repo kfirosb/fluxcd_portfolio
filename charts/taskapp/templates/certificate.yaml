@@ -8,6 +8,6 @@ spec:
     - ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
   secretName: kfirsecret
   issuerRef:
-    name: letsencrypt-prod
+    name: account-key-prod
     kind: ClusterIssuer
   

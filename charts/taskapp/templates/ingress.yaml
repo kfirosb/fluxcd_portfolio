@@ -7,12 +7,12 @@ metadata:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"    
-    cert-manager.io/issuer: "letsencrypt-prod"
+    cert-manager.io/issuer: "account-key-prod"
 spec:
   tls:
   - hosts:
     - ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
-    # secretName: kfirsecret
+      secretName: kfirsecret
   rules:
   - host: ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
     http:
