@@ -11,10 +11,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
+    - a4992ad0040be424ead50b6da94480c0-67163295.eu-west-1.elb.amazonaws.com
       secretName: kfirsecret
   rules:
-  - host: ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
+  - host: a4992ad0040be424ead50b6da94480c0-67163295.eu-west-1.elb.amazonaws.com
     http:
       paths:
       - path: /

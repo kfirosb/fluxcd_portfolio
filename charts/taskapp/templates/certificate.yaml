@@ -5,7 +5,7 @@ metadata:
   namespace:  default
 spec:
   dnsNames:
-    - ad76a03e246fc4baf81bfc5a13aa1f66-421719991.eu-west-1.elb.amazonaws.com
+    - a4992ad0040be424ead50b6da94480c0-67163295.eu-west-1.elb.amazonaws.com
   secretName: kfirsecret
   issuerRef:
     name: account-key-prod
