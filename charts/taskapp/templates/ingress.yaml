@@ -9,10 +9,10 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"    
     cert-manager.io/issuer: "account-key-prod"
 spec:
-  tls:
-  - hosts:
-    - a4992ad0040be424ead50b6da94480c0-67163295.eu-west-1.elb.amazonaws.com
-      secretName: kfirsecret
+  # tls:
+  # - hosts:
+  #   - a4992ad0040be424ead50b6da94480c0-67163295.eu-west-1.elb.amazonaws.com
+  #     secretName: kfirsecret
   rules:
   - host: a4992ad0040be424ead50b6da94480c0-67163295.eu-west-1.elb.amazonaws.com
     http:
