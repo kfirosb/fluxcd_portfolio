@@ -4,8 +4,8 @@ metadata:
   name: letsencryptpod
   namespace:  default
 spec:
-  # dnsNames:
-  #   - a4992ad0040be424ead50b6da94480c0-67163295.eu-west-1.elb.amazonaws.com
+  dnsNames:
+    - taskappkfir.tk
   secretName: kfirsecret
   issuerRef:
     name: account-key-prod
