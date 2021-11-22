@@ -5,14 +5,14 @@ metadata:
   namespace: default
   annotations:
     kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"    
-    cert-manager.io/issuer: "letsencrypt-prod"
+    # nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    # nginx.ingress.kubernetes.io/force-ssl-redirect: "true"    
+    cert-manager.io/issuer: "account-key-prod"
 spec:
   tls:
   - hosts:
     - taskappkfir.tk
-    secretName: nginx-ingress-controller-token-zpppg
+    secretName: bla
   rules:
   - host: taskappkfir.tk
     http:
@@ -21,7 +21,7 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: {{ .Values.app.serv }}
+            name: taskapp
             port:
               number: 80
 

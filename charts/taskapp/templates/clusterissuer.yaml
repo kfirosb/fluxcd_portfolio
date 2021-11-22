@@ -9,7 +9,7 @@ spec:
     server: https://acme-v02.api.letsencrypt.org/directory
     email: kfirosb@gmail.com
     privateKeySecretRef:
-      name: account-key-prod
+      name: account-key-prod2
     solvers:
     - http01:
        ingress:
